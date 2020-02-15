@@ -11,7 +11,7 @@ class TicTacToe
       {
         for (int j = 0; j < 3; j++)
         {
-          board_[i][j] = " ";
+          board_[i][j] = "_";
         }
       }
     }
@@ -21,9 +21,15 @@ class TicTacToe
       {
         for (int j = 0; j < 3; j++)
         {
-          std::cout << board_[i][j]; << " \n"[j == 2];
+          std::cout << board_[i][j] << " \n"[j == 2];
         }
       }
+    }
+
+    void PlaceMarker(int location[]){
+      int row = location[0];
+      int col = location[1];
+      board_[row][col] = "X";
     }
 };
 
