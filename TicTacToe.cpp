@@ -44,8 +44,9 @@ class TicTacToe
       moves[0] = row;
       moves[1] = col;
       return moves;
+    }
 
-    void PlaceMarker(int location[], int turn){
+    void PlaceMarker(int location[]){
       int row = location[0];
       int col = location[1];
 
@@ -69,6 +70,12 @@ int main()
   TicTacToe *game = new TicTacToe();
   game->CreateBoard();
   game->DisplayBoard();
-  int* arr = game->GetPlayerChoice();
+
+  for (int i = 0; i <9; i++)
+  {
+    int* arr = game->GetPlayerChoice();
+    game->PlaceMarker(arr);
+    game->DisplayBoard();
+  }
 
 }
