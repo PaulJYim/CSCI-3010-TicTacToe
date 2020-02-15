@@ -1,0 +1,84 @@
+_ _ _
+_ _ _
+_ _ _
+Which row?
+1
+
+Which col?
+1
+
+_ _ _
+_ X _
+_ _ _
+Which row?
+0
+
+Which col?
+0
+
+O _ _
+_ X _
+_ _ _
+Which row?
+0
+
+Which col?
+1
+
+O X _
+_ X _
+_ _ _
+Which row?
+0
+
+Which col?
+2
+
+O X O
+_ X _
+_ _ _
+Which row?
+1
+
+Which col?
+0
+
+O X O
+X X _
+_ _ _
+Which row?
+1
+
+Which col?
+2
+
+O X O
+X X O
+_ _ _
+Which row?
+2
+
+Which col?
+0
+
+O X O
+X X O
+X _ _
+Which row?
+2
+
+Which col?
+1
+
+O X O
+X X O
+X O _
+Which row?
+2
+
+Which col?
+2
+
+O X O
+X X O
+X O X
