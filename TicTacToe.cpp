@@ -11,7 +11,7 @@ class TicTacToe
       {
         for (int j = 0; j < 3; j++)
         {
-          board_[i][j] = " ";
+          board_[i][j] = "_";
         }
       }
     }
