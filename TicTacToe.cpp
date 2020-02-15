@@ -5,7 +5,7 @@ class TicTacToe
   private:
     //Add turnCount attribute to determine whether we should fill out the board
     //with "O's" or "X's."
-    int turnCount = 0;
+    int turnCount_ = 0;
     std::string board_[3][3];
   public:
     void CreateBoard()
@@ -29,6 +29,7 @@ class TicTacToe
       }
     }
 
+
     int* GetPlayerChoice()
     {
       int row;
@@ -49,7 +50,7 @@ class TicTacToe
       int col = location[1];
 
       //Different marker based on turn type.
-      if(turn % 2 == 0)
+      if(turnCount_ % 2 == 0)
       {
         board_[row][col] = "X";
       }
@@ -58,6 +59,7 @@ class TicTacToe
         board_[row][col] = "O";
       }
 
+      turnCount_++;
     }
 };
 
