@@ -29,7 +29,23 @@ class TicTacToe
       }
     }
 
-    void PlaceMarker(int location[]){
+
+    int* GetPlayerChoice()
+    {
+      int row;
+      int col;
+      std::cout<< "Which row?" <<std::endl;
+      std::cin >> row;
+      std::cout << std::endl;
+      std::cout << "Which col?" <<std::endl;
+      std::cin >> col;
+      std::cout<<std::endl;
+      int* moves = new int[2];
+      moves[0] = row;
+      moves[1] = col;
+      return moves;
+
+    void PlaceMarker(int location[], int turn){
       int row = location[0];
       int col = location[1];
 
@@ -44,7 +60,6 @@ class TicTacToe
       }
 
       turnCount_++;
-
     }
 };
 
@@ -54,4 +69,6 @@ int main()
   TicTacToe *game = new TicTacToe();
   game->CreateBoard();
   game->DisplayBoard();
+  int* arr = game->GetPlayerChoice();
+
 }
