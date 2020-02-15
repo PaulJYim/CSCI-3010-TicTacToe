@@ -14,6 +14,7 @@ on the board. Make sure to enter the correct location! The positions should not 
 To run the game, simply enter the commands:
 
 g++ TicTacToe.cpp
+
 ./a.out
 
 Enjoy!
